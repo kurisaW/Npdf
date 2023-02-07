@@ -759,7 +759,7 @@ const defaultOptions = {
 };
 {
   defaultOptions.defaultUrl = {
-    value: "",
+    value: "GCC.中文手册.pdf",
     kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {
