@@ -7,4 +7,4 @@
 
 https://localhost/Npdf//web/viewer.html?file=xxx.pdf
 
-Declare:https://kurisaw.github.io/Npdf//web/viewer.html=Google C++ Style Guide(chinese).pdf
+Declare:[https://kurisaw.github.io/Npdf//web/viewer.html?file=GCC.chinese-manual.pdf](https://kurisaw.github.io/Npdf//web/viewer.html?file=GCC.chinese-manual.pdf)
