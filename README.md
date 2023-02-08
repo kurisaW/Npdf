@@ -1,5 +1,5 @@
 # Npdf
-本仓库用于搭建个人PDF在线预览工具
+This warehouse is used to build personal PDF online preview tools
 
 ## How can I view these PDFS online?
 
@@ -8,3 +8,9 @@
 https://localhost/Npdf//web/viewer.html?file=xxx.pdf
 
 Declare:[https://kurisaw.github.io/Npdf//web/viewer.html?file=GCC.chinese-manual.pdf](https://kurisaw.github.io/Npdf//web/viewer.html?file=GCC.chinese-manual.pdf)
+
+## The PDF resources uploaded so far are as follows:
+* GCC.chinese-manual.pdf
+* Google.C++.Style.Guide(chinese).pdf
+* Linux.series.summary.manual.pdf
+* ...
