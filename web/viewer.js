@@ -759,7 +759,7 @@ const defaultOptions = {
 };
 {
   defaultOptions.defaultUrl = {
-    value: "Google.C++-Style-Guide(chinese).pdf",
+    value: "Google.C++-Style-Guide.pdf",
     kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {
