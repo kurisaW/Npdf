@@ -11,7 +11,7 @@ Declare:[https://kurisaw.github.io/Npdf//web/viewer.html?file=GCC.chinese-manual
 
 ## The PDF resources uploaded so far are as follows:
 * GCC.chinese-manual.pdf
-* Google.C++-Style-Guide.pdf
+* Google.CPlusPlus-Style-Guide.pdf
 * Linux-series-summary-manual.pdf
-* rtthread_manual.zh.pdf
+* RTThread_manual.zh.pdf
 * ...
