@@ -13,4 +13,5 @@ Declare:[https://kurisaw.github.io/Npdf//web/viewer.html?file=GCC.chinese-manual
 * GCC.chinese-manual.pdf
 * Google.C++-Style-Guide.pdf
 * Linux-series-summary-manual.pdf
+* rtthread_manual.zh.pdf
 * ...
