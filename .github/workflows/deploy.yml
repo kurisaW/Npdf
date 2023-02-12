@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Setup Git
-      uses: actions/setup-git@v2
+      uses: actions/setup-git@main
       with:
         git-user-email: yifang.wangyq@foxmail.com
         git-user-name: kurisaW
