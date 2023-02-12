@@ -1,31 +1,20 @@
-name: Deploy to Github Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
       - master
 
-env:
-  GH_REF: github.com/kurisaW/Npdf.git
-  TARGET_BRANCH: gh-pages
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v2
 
-#     - name: Setup Git
-#       uses: actions/setup-git@v2
-#       with:
-#         git-user-email: yifang.wangyq@foxmail.com
-#         git-user-name: kurisaW
-
-    - name: Deploy
+    - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: ${{ env.TARGET_BRANCH }}
-        publish_dir: ./Npdf
+        publish_dir: ./public
