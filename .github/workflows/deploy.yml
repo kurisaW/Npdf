@@ -17,11 +17,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Setup Git
-      uses: actions/setup-git@v2
-      with:
-        git-user-email: yifang.wangyq@foxmail.com
-        git-user-name: kurisaW
+#     - name: Setup Git
+#       uses: actions/setup-git@v2
+#       with:
+#         git-user-email: yifang.wangyq@foxmail.com
+#         git-user-name: kurisaW
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
