@@ -14,7 +14,7 @@ def get_filename(url):
 
 for filename in os.listdir(directory):
     if filename.endswith('.pdf'):
-        filepath = Path(f"/{filename}")
+        filepath = Path(f"{filename}")
 
         # Extract the filename from the URL format provided
         url = f"* [{filename}](https://localhost/Npdf//web/viewer.html?file={get_filename(str(filepath))})"
