@@ -1,0 +1,13 @@
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches: [ master ]
+  delete:
+    branches: [ master ]
+  create:
+    branches: [ master ]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest

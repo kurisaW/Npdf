@@ -17,7 +17,7 @@ for filename in os.listdir(directory):
         filepath = Path(f"{filename}")
 
         # Extract the filename from the URL format provided
-        url = f"* [{filename}](https://localhost/Npdf//web/viewer.html?file={get_filename(str(filepath))})"
+        url = f"* [{filename}](https://kurisaw.github.io/Npdf//web/viewer.html?file={get_filename(str(filepath))})"
 
         # Append the extracted filename to the list of filenames
         filenames.append(url)
