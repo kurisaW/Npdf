@@ -1,13 +1,33 @@
-name: Deploy to Github Pages
-
+name: Deploy Website
 on:
   push:
-    branches: [ master ]
-  delete:
-    branches: [ master ]
-  create:
-    branches: [ master ]
-
+    branches:
+      - main # or any other branch name
 jobs:
-    build:
-        runs-on: ubuntu-latest
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Git credentials
+      uses: google-github-actions/google-authenticator@master
+      with:
+        username: ${{ secrets.GITHUB_USERNAME }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    - name: Build and commit changes
+      run: |
+        make clean
+        make html
+        git add .
+        git commit -m "Deployment"
+    - name: Tag release
+      if: always()
+      run: |
+        RELEASETAG=$(git describe --abbrev=0)
+        git tag v$RELEASETAG -f
+    - name: Deploy to GitHub Pages
+      uses: jpope/action-gh-page-deploy
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_repo_owner: <kurisaW> # Replace with your actual username
+        github_repo_name: <Npdf> # Replace with your actual repository name
+        github_branch: gh-pages
